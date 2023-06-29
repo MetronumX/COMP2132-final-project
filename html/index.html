@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         Homepage | COMP 2132 Final Project
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="../styles/styles.css">
+
+      <script src="https://kit.fontawesome.com/266ddeddec.js" crossorigin="anonymous"></script>
+
+      <script src="../scripts/dice-game.js" defer="defer"></script>
+      <script src="../scripts/dice-game-functions.js" defer="defer"></script>
+
+
+   </head>
+
+   <body>
+      <div id="wrapper">
+         <main>
+
+            <h1 id="game-name">POKEDICE</h1>
+   
+            <div id="buttons">
+               <button id="game-rules-btn">Game Rules</button>
+               <!--<button id="choose-pokemon-btn">Choose Pokemon</button>-->
+               <button id="play-game-btn">Play Game</button>
+            </div>
+            
+
+            <section id='game-rules'>
+               <div>
+                  <h2>Rules for Pokedice!</h2>
+                  <ol>
+                     <li>There are Three rounds in a game.</li>
+                     <li>If any of the players two dice comes up as a 1 then the score for that round for that player is 0, eg: If the player rolls a 6 and 1, they get a score of 0.
+                     </li>
+                     <li>If the player rolls a pair of the same numbers then the players score is the total of the two dice times 2. eg: if he player rolls 5 and 5, they get a score of (5+5)*2=20
+                     </li>
+                     <li>
+                        If the player rolls any other combination of dice other than the ones mentioned above then the players score is the total value of the two dice, eg: player rolls a 3 and 2, player gets a score of 3+2=5
+                     </li>
+                     <li>
+                        Player with the highest score after three rounds wins!
+                     </li>
+                  </ol> 
+                  <button id="btn-close">&#10005;</button>    
+               </div>
+               
+            </section>
+   
+            
+            <section id="choose-pokemon">
+   
+            </section>
+   
+            <section id="play-game">
+               <div id="player-name">
+                  <p>You</p>
+               </div>
+
+               <div id="player-score">
+                  <p>Total Score:</p>
+                  <p>Round Score:</p>
+               </div>
+
+               <div id="player-dice">
+                  <img id="player-roll" src="../images/dice.png" alt="dice">
+               </div>
+
+               <div id="player-image">
+                  <img id="player-picture" src="../images/skwovet.png" alt="dice">
+               </div>
+
+               <div id="computer-name">
+                  <p>Rayquaza</p>
+               </div>
+
+               <div id="computer-score">
+                  <p>Total Score:</p>
+                  <p>Round Score:</p>
+               </div>
+
+               <div id="computer-dice">
+                  <img id="computer-roll" src="../images/dice.png" alt="dice">
+               </div>
+
+               <div id="computer-image">
+                  <img id="computer-picture" src="../images/rayquaza_computer.png" alt="dice">
+               </div>
+
+               <div id="round-counter">
+                  <p>Round:1</p>
+               </div>
+
+               <button id="roll-dice-btn">Roll Dice!</button>
+
+               <div id="game-text">
+                  <p>A wild Rayquaza has appeared!</p>
+               </div>
+
+               <!--
+                  <input type="image" id="btn-mute" src="../images/unmuted.png" alt="mute button">
+               <audio id="background-audio" src="../audio/pokemon_emerald_battle.m4a"></audio>
+               -->
+               
+            </section>
+   
+            <!--<section id="part-three">
+            </section> -->
+            
+   
+         </main>
+      </div>
+      
+
+      <footer>
+
+         <div class="footer-author">
+            <ul class="footer-ul">
+                <li>Linkun Yao</li>
+                <li>COMP 2132</li>
+                <li>Contact: 123-456-7890</li>
+            </ul>
+        </div>
+
+         <div class="footer-socials">
+            <ul class="footer-ul" id="socials">
+               <li class="social-link"><a class="fa-brands fa-twitter fa-2xl" href="https://www.bcit.ca/courses/introduction-to-web-development-comp-1850/"></a></li>
+               <li class="social-link"><a class="fa-brands fa-facebook fa-2xl" href="https://www.bcit.ca/courses/introduction-to-web-development-comp-1850/"></a></li>
+               <li class="social-link"><a class="fa-brands fa-instagram fa-2xl" href="https://www.bcit.ca/courses/introduction-to-web-development-comp-1850/"></a></li>
+               <li class="social-link"><a class="fa-brands fa-youtube fa-2xl" href="https://www.bcit.ca/courses/introduction-to-web-development-comp-1850/"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </body>
+</html>
